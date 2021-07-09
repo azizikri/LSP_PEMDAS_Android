@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TokoActivity">
+
+    <EditText
+        android:id="@+id/input_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="74dp"
+        android:ems="10"
+        android:hint="Nama Barang"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_proses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="66dp"
+        android:onClick="proses"
+        android:text="Proses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_harga" />
+
+    <TextView
+        android:id="@+id/text_barang"
+        android:layout_width="312dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/black_100"
+        android:gravity="center"
+        android:text="Nama Barang"
+        android:textColor="@color/soft_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_proses" />
+
+    <TextView
+        android:id="@+id/text_jumlah"
+        android:layout_width="312dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/black_100"
+        android:gravity="center"
+        android:text="Jumlah Barang"
+        android:textColor="@color/soft_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_barang" />
+
+    <TextView
+        android:id="@+id/text_harga"
+        android:layout_width="312dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/black_100"
+        android:gravity="center"
+        android:text="Harga Awal"
+        android:textColor="@color/soft_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_jumlah" />
+
+    <TextView
+        android:id="@+id/text_potongan"
+        android:layout_width="312dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/black_100"
+        android:gravity="center"
+        android:text="Potongan Harga"
+        android:textColor="@color/soft_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_harga" />
+
+
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="312dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/black_100"
+        android:gravity="center"
+        android:text="Total Harga"
+        android:textColor="@color/soft_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_potongan" />
+
+    <TextView
+        android:id="@+id/text_keterangan"
+        android:layout_width="312dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/black_100"
+        android:gravity="center"
+        android:text="Keterangan"
+        android:textColor="@color/soft_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_total" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="66dp"
+        android:onClick="hapusDataToko"
+        android:text="Hapus Data"
+        app:layout_constraintStart_toEndOf="@+id/btn_proses"
+        app:layout_constraintTop_toBottomOf="@+id/input_harga" />
+
+    <EditText
+        android:id="@+id/input_jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Jumlah Barang"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_barang" />
+
+    <EditText
+        android:id="@+id/input_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Harga"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_jumlah" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="164dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="16dp"
+        android:text="TOKO MAJU JAYA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
